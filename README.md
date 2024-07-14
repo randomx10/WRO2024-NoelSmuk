@@ -16,3 +16,7 @@ This repository contains engineering materials of a self-driven vehicle's model 
 ## Introduction
 
 _This part must be filled by participants with the technical clarifications about the code: which modules the code consists of, how they are related to the electromechanical components of the vehicle, and what is the process to build/compile/upload the code to the vehicle’s controllers._
+
+## April
+
+This is the month were we start to work because our school's robotics club started. In this month we prioritized on learning the new rules of this years competition so we may do any necessary adjustments to our robot from last year. We started testing the robot to make sure that all of it's components were working properly and we also started to try to find ways to connect the camera to the LiDAR sensor so that the LiDAR doesn't detect the blocks as walls and goes through them properly.
