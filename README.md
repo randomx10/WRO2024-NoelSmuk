@@ -1,3 +1,7 @@
+# WRO Future Engineers 2024
+# Team Noel Smuk
+![image](https://github.com/user-attachments/assets/b86ccbb4-352b-41e2-82a5-5000b6f66f60)
+
 Engineering materials
 ====
 
