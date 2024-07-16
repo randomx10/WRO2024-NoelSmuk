@@ -19,7 +19,30 @@ This repository contains engineering materials of a self-driven vehicle's model 
 
 ## Introduction
 
-_This part must be filled by participants with the technical clarifications about the code: which modules the code consists of, how they are related to the electromechanical components of the vehicle, and what is the process to build/compile/upload the code to the vehicle’s controllers._
+In this repository you will find the code used to interpret distances using the lidar (scan2.py) and the code for the arduino which communicates with the python code running on the Raspberry PI using Serial Protocol over USB, the robot is 950g, 25cm wide and barely 12cm tall, it uses a 12v 3S 1200 mAh LiPO Battery which is then distributed to the L298n motor controller, a generic car charger that can provide energy to the Raspberry and everything else, and the servo.
+The car itself uses the Ackerman steering principle, has one engine on the back connected to a 20 pin pinon that provides us with a lot of speed. Along with this, we have an RPLIDAR A1M8 connected to the Raspberry PI, Along with a FisherTecnik Camera to detect obstacles.
+
+### Installation
+You will need:
+The list of components listed above
+A microSD card
+
+First, you download the Raspberry Pi Imager and then you flash raspbian into the SD Card, We recommend raspbian because its a very lightweight system that can boot fast and uses down to 70mb of ram.
+You will need to configure network settings and how to access SSH based on your setup.
+After logging into raspbian, install git, and clone the repository, before this we suggest to make a directory with the name wro_ws:
+```
+cd
+mkdir wro_ws && cd wro_ws
+sudo apt install git 
+git clone https://github.com/randomx10/WRO2024-NoelSmuk
+```
+After cloning the repository, enter the directory and head to src, install the python3 dependencies, and you are ready to go!
+```
+cd WRO2024-NoelSmuk/src
+pip3 install -r requirements.txt
+python3 scan2.py
+```
+PSA: If you want to run this on startup, we recommend adding it to /etc/rc_local, as it loads almost on boot.
 
 ## April
 
